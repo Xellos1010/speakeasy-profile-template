@@ -50,3 +50,5 @@ If SpeakEasy publishes `schema_version` 2, pull the new schema and example from 
 ## License
 
 Apache License 2.0. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
+
+The SpeakEasy application itself is licensed under FSL-1.1-ALv2 (Functional Source License 1.1, Apache 2.0 Future License).
