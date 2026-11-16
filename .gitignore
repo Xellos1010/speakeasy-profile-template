@@ -1,0 +1,12 @@
+# your real profile must never be committed to a public fork
+profile.json
+/profile/
+.env
+.env.*
+*.pem
+*.key
+*.jks
+*.keystore
+local.properties
+google-services.json
+.DS_Store

@@ -1,0 +1,35 @@
+{
+  "$schema": "./profile.schema.json",
+  "schema_version": 1,
+  "profile_name": "my-speakeasy",
+  "server": {
+    "public_url": "https://my-computer.example.com:8445"
+  },
+  "hosts": {
+    "inference_ranking": [],
+    "host_addresses": {}
+  },
+  "accounts": {
+    "accounts_file": "~/.claude-accounts.json"
+  },
+  "operator_overlay": {
+    "id": "default",
+    "dir": "~/.speakeasy/operator-profiles"
+  },
+  "android": {
+    "server_url": "https://my-computer.example.com:8445",
+    "keystore_path": "keystore/speakeasy-release.jks",
+    "key_alias": "speakeasy",
+    "store_password_env": "SPK_KS_PW"
+  },
+  "packaging": {
+    "bundle_id": "org.example.speakeasy",
+    "sign_identity": "speakeasy-signing",
+    "sign_keychain": "~/Library/Keychains/speakeasy-sign.keychain-db",
+    "sign_keychain_password_env": "SPK_SIGN_KEYCHAIN_PW"
+  },
+  "secrets": {
+    "android-keystore-password": { "source": "env", "name": "SPK_KS_PW" },
+    "sign-keychain-password": { "source": "env", "name": "SPK_SIGN_KEYCHAIN_PW" }
+  }
+}
